@@ -14,7 +14,7 @@ người ở xa join được community.
 
 ```
 Người join (ở xa)
-   │  wss://<node>.<tailnet>.ts.net:10000  + API token
+   │  wss://dukick-1.tailc0eb7b.ts.net:10000  + API token
    ▼
 Tailscale Funnel (:10000, công khai, TLS)
    ▼
@@ -42,13 +42,11 @@ NIP-98/NIP-42 cũng hỏng (URL client ký phải khớp đúng URL thật đư�
 
    | Trường | Giá trị |
    |--------|---------|
-   | **Relay URL** | `wss://<node>.<tailnet>.ts.net:10000` |
+   | **Relay URL** | `wss://dukick-1.tailc0eb7b.ts.net:10000` |
    | **API Token** | `buzz_...` |
 
 4. Lưu lại là xong. Nếu bạn ở cùng Tailnet với chủ community, có thể dùng URL nội bộ
-   `wss://<node>.<tailnet>.ts.net:9443` (không cần Funnel công khai).
-
-> Thay `<node>.<tailnet>` bằng hostname Tailscale thật của máy chủ community.
+   `wss://dukick-1.tailc0eb7b.ts.net:9443` (không cần Funnel công khai).
 
 ---
 
@@ -84,7 +82,7 @@ tailscale serve status
 
 ### Bước 3 — Đăng ký community dưới đúng hostname Funnel
 Trong app Buzz, đặt **Relay URL** của community thành chính URL công khai
-`wss://<node>.<tailnet>.ts.net:10000`. Relay sẽ lưu community dưới host đó — khớp với
+`wss://dukick-1.tailc0eb7b.ts.net:10000`. Relay sẽ lưu community dưới host đó — khớp với
 Host mà client ở xa gửi tới (vì proxy không rewrite).
 
 ### Bước 4 — Tự khởi động cùng Windows (tùy chọn)
